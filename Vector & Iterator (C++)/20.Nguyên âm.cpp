@@ -17,12 +17,17 @@ void input_vector(int n)
     }
 }
 
+bool isVowel(char c)
+{
+    return (c == 'u' || c == 'e' || c == 'o' || c == 'a' || c == 'i');
+}
+
 void traverse_vector()
 {
     bool exist = false;
     for (auto it = v.rbegin(); it != v.rend(); it++)
     {
-        if (it->first == 'u' || it->first == 'e' || it->first == 'o' || it->first == 'a' || it->first == 'i')
+        if (isVowel(it->first))
         {
             cout << it->first << " " << it->second << endl;
             exist = true;
