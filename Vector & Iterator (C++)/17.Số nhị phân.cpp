@@ -17,7 +17,7 @@ vector<char> binary_converting(long long value)
     return result;
 }
 
-void querry(int t)
+void query(int t)
 {
     for (int i = 0; i < t; i++)
     {
@@ -34,6 +34,6 @@ int main()
 {
     int t;
     cin >> t;
-    querry(t);
+    query(t);
     return 0;
 }
